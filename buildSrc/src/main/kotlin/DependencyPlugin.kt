@@ -48,6 +48,8 @@ internal fun Project.configureAndroid() = this.extensions.getByType<BaseExtensio
 
         getByName(BuildType.DEBUG) {
             isMinifyEnabled = BuildTypeDebug.isMinifyEnabled
+            applicationIdSuffix  = BuildTypeDebug.applicationIdSuffix
+            versionNameSuffix = BuildTypeDebug.versionNameSuffix
         }
 
     }
