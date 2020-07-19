@@ -70,6 +70,8 @@ internal fun Project.configureAndroid() = this.extensions.getByType<BaseExtensio
         exclude("META-INF/*.kotlin_module")
     }
 
+    buildFeatures.viewBinding = true
+
 }
 
 //Add dependencies common across modules
