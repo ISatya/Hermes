@@ -9,14 +9,22 @@ dependencies {
     implementation(LibraryDependency.APP_COMPAT)
     implementation(LibraryDependency.CONSTRAINT_LAYOUT)
 
-    implementation(LibraryDependency.NAVIGATION_FRAGMENT)
-    implementation(LibraryDependency.NAVIGATION_UI)
+    implementation(LibraryDependency.Navigation.FRAGMENT)
+    implementation(LibraryDependency.Navigation.UI)
+    implementation(LibraryDependency.Navigation.FRAGMENT_KTX)
+    implementation(LibraryDependency.Navigation.UI_KTX)
 
-    implementation(LibraryDependency.NAVIGATION_FRAGMENT_KTX)
-    implementation(LibraryDependency.NAVIGATION_UI_KTX)
-
-    // Testing Navigation
-    androidTestImplementation(LibraryDependency.NAVIGATION_TESTING)
+    //Network
+    //Retrofit
+    implementation(LibraryDependency.Network.RETROFIT)
+    implementation(LibraryDependency.Network.MOSHI_CONVERTER)
+    //okhttp
+    implementation(LibraryDependency.Network.OKHTTP)
+    implementation(LibraryDependency.Network.LOGGING_INTERCEPTOR)
+    //Moshi
+    implementation(LibraryDependency.Moshi.KOTLIN)
+    implementation(LibraryDependency.Moshi.KOTLIN_CODEGEN)
 
     androidTestImplementation(TestingDependency.ESPRESSO_CORE)
+    androidTestImplementation(LibraryDependency.Navigation.TESTING)
 }
