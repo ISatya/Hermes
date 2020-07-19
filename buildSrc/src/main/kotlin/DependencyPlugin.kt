@@ -74,8 +74,11 @@ internal fun Project.configureAndroid() = this.extensions.getByType<BaseExtensio
 
 //Add dependencies common across modules
 internal fun Project.addDependencies() = dependencies.apply {
-    add(ConfigurationName.IMPLEMENTATION, LibraryDependency.HILT_ANDROID)
-    add(ConfigurationName.KAPT, LibraryDependency.HILT_ANDROID_COMPILER)
+    add(ConfigurationName.IMPLEMENTATION, LibraryDependency.Hilt.ANDROID)
+    add(ConfigurationName.IMPLEMENTATION, LibraryDependency.Hilt.VIEWMODEL)
+    add(ConfigurationName.KAPT, LibraryDependency.Hilt.ANDROID_COMPILER)
+    add(ConfigurationName.KAPT, LibraryDependency.Hilt.COMPILER)
+
     add(ConfigurationName.IMPLEMENTATION, LibraryDependency.KOTLIN_STDLIB)
     add(ConfigurationName.TEST_IMPLEMENTATION, TestingDependency.JUNIT)
     add(ConfigurationName.ANDROID_TEST_IMPLEMENTATION, TestingDependency.EXT_JUNIT)

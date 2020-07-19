@@ -16,6 +16,11 @@ object LibraryVersion {
     const val MOSHI = "1.9.2"
     const val COROUTINES = "1.3.6"
 
+    object Hilt{
+        const val ANDROID = "2.28-alpha"
+        const val JETPACK = "1.0.0-alpha01"
+    }
+
     object Network{
         const val RETROFIT = "2.9.0"
         const val OKHTTP = "4.7.2"
@@ -31,8 +36,12 @@ object LibraryDependency {
     const val CONSTRAINT_LAYOUT = "androidx.constraintlayout:constraintlayout:${LibraryVersion.CONSTRAINT_LAYOUT}"
 
     //Hilt
-    const val HILT_ANDROID = "com.google.dagger:hilt-android:${LibraryVersion.HILT_VERSION}"
-    const val HILT_ANDROID_COMPILER = "com.google.dagger:hilt-android-compiler:2.28-alpha"
+    object Hilt{
+        const val ANDROID = "com.google.dagger:hilt-android:${LibraryVersion.Hilt.ANDROID}"
+        const val ANDROID_COMPILER = "com.google.dagger:hilt-android-compiler:${LibraryVersion.Hilt.ANDROID}"
+        const val COMPILER = "androidx.hilt:hilt-compiler:${LibraryVersion.Hilt.JETPACK}"
+        const val VIEWMODEL = "androidx.hilt:hilt-lifecycle-viewmodel:${LibraryVersion.Hilt.JETPACK}"
+    }
 
     //Navigation
     object Navigation{
