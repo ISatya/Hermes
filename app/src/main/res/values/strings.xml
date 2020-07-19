@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Hermes</string>
+
+    <string name="team_search_label">Search</string>
 </resources>
