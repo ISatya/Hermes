@@ -24,6 +24,9 @@ dependencies {
     //Moshi
     implementation(LibraryDependency.Moshi.KOTLIN)
     implementation(LibraryDependency.Moshi.KOTLIN_CODEGEN)
+    //Coroutines
+    implementation(LibraryDependency.Coroutines.CORE)
+    implementation(LibraryDependency.Coroutines.ANDROID)
 
     androidTestImplementation(TestingDependency.ESPRESSO_CORE)
     androidTestImplementation(LibraryDependency.Navigation.TESTING)

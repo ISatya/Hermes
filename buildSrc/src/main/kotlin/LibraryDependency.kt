@@ -14,6 +14,7 @@ object LibraryVersion {
     const val HILT_VERSION = "2.28-alpha"
     const val NAV_VERSION = "2.3.0"
     const val MOSHI = "1.9.2"
+    const val COROUTINES = "1.3.6"
 
     object Network{
         const val RETROFIT = "2.9.0"
@@ -57,6 +58,11 @@ object LibraryDependency {
     object Moshi{
         const val KOTLIN = "com.squareup.moshi:moshi-kotlin:${LibraryVersion.MOSHI}"
         const val KOTLIN_CODEGEN = "com.squareup.moshi:moshi-kotlin-codegen:${LibraryVersion.MOSHI}"
+    }
+
+    object Coroutines{
+        const val CORE = "org.jetbrains.kotlinx:kotlinx-coroutines-core:${LibraryVersion.COROUTINES}"
+        const val ANDROID = "org.jetbrains.kotlinx:kotlinx-coroutines-android:${LibraryVersion.COROUTINES}"
     }
 
 }
