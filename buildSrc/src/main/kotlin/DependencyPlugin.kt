@@ -3,6 +3,7 @@ import org.gradle.api.JavaVersion
 import org.gradle.api.Plugin
 import org.gradle.api.Project
 import org.gradle.kotlin.dsl.getByType
+import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 
 /**
  * Created on 18/07/20.
@@ -57,6 +58,16 @@ internal fun Project.configureAndroid() = this.extensions.getByType<BaseExtensio
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_1_8
         targetCompatibility = JavaVersion.VERSION_1_8
+    }
+
+    project.tasks.withType(KotlinCompile::class.java).configureEach {
+        kotlinOptions {
+            jvmTarget = "1.8"
+        }
+    }
+
+    packagingOptions {
+        exclude("META-INF/*.kotlin_module")
     }
 
 }
