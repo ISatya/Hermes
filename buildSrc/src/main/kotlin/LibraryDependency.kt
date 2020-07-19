@@ -11,10 +11,10 @@ object LibraryVersion {
     const val CORE_KTX = "1.3.0"
     const val APP_COMPAT = "1.1.0"
     const val CONSTRAINT_LAYOUT = "1.1.3"
-    const val HILT_VERSION = "2.28-alpha"
     const val NAV_VERSION = "2.3.0"
     const val MOSHI = "1.9.2"
     const val COROUTINES = "1.3.6"
+    const val MATERIAL = "1.1.0"
 
     object Hilt{
         const val ANDROID = "2.28-alpha"
@@ -34,6 +34,7 @@ object LibraryDependency {
     const val CORE_KTX = "androidx.core:core-ktx:${LibraryVersion.CORE_KTX}"
     const val APP_COMPAT = "androidx.appcompat:appcompat:${LibraryVersion.APP_COMPAT}"
     const val CONSTRAINT_LAYOUT = "androidx.constraintlayout:constraintlayout:${LibraryVersion.CONSTRAINT_LAYOUT}"
+    const val MATERIAL =  "com.google.android.material:material:${LibraryVersion.MATERIAL}"
 
     //Hilt
     object Hilt{

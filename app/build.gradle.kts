@@ -28,6 +28,8 @@ dependencies {
     implementation(LibraryDependency.Coroutines.CORE)
     implementation(LibraryDependency.Coroutines.ANDROID)
 
+    implementation(LibraryDependency.MATERIAL)
+
     androidTestImplementation(TestingDependency.ESPRESSO_CORE)
     androidTestImplementation(LibraryDependency.Navigation.TESTING)
 }
