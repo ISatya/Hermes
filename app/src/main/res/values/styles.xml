@@ -24,4 +24,10 @@
 
     </style>
 
+    <style name="SearchErrorView">
+        <item name="android:background">@color/color_secondary</item>
+        <item name="android:textColor">@color/color_on_secondary</item>
+        <item name="android:padding">@dimen/spacing_xxsmall</item>
+    </style>
+
 </resources>
