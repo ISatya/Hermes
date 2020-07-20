@@ -17,14 +17,28 @@ gradlePlugin {
     }
 }
 
+object CoreVersions{
+    const val GRADLE = "4.0.0"
+    const val KOTLIN = "1.3.72"
+    const val HILT = "2.28-alpha"
+}
+
+object Dependencies{
+    const val GRADLE = "com.android.tools.build:gradle:${CoreVersions.GRADLE}"
+    const val KOTLIN_GRADLE_PLUGIN = "org.jetbrains.kotlin:kotlin-gradle-plugin:${CoreVersions.KOTLIN}"
+    const val HILT_ANDROID_GRADLE_PLUGIN = "com.google.dagger:hilt-android-gradle-plugin:${CoreVersions.HILT}"
+}
+
 dependencies {
+    /* Depend on the default Gradle API's since we want to build a custom plugin */
+    implementation(gradleApi())
     /* Depend on the android gradle plugin, since we want to access it in our plugin */
-    implementation("com.android.tools.build:gradle:4.0.0")
+    implementation(Dependencies.GRADLE)
 
     /* Example Dependency */
     /* Depend on the kotlin plugin, since we want to access it in our plugin */
-    implementation("org.jetbrains.kotlin:kotlin-gradle-plugin:1.3.72")
+    implementation(Dependencies.KOTLIN_GRADLE_PLUGIN)
 
-    /* Depend on the default Gradle API's since we want to build a custom plugin */
-    implementation(gradleApi())
+    implementation(Dependencies.HILT_ANDROID_GRADLE_PLUGIN)
+
 }

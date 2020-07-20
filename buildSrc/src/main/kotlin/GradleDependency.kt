@@ -12,4 +12,6 @@ object GradlePluginId {
     const val KOTLIN_ANDROID = "kotlin-android"
     const val KOTLIN_ANDROID_EXTENSIONS = "kotlin-android-extensions"
     const val HERMES_PLUGIN = "com.plugin.hermes"
+    const val KOTLIN_KAPT = "kotlin-kapt"
+    const val HILT_ANDROID_PLUGIN = "dagger.hilt.android.plugin"
 }
