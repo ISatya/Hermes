@@ -30,6 +30,8 @@ dependencies {
 
     implementation(LibraryDependency.MATERIAL)
 
+    implementation(LibraryDependency.COIL)
+
     androidTestImplementation(TestingDependency.ESPRESSO_CORE)
     androidTestImplementation(LibraryDependency.Navigation.TESTING)
 }

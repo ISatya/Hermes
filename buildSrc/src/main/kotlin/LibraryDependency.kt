@@ -15,6 +15,7 @@ object LibraryVersion {
     const val MOSHI = "1.9.2"
     const val COROUTINES = "1.3.6"
     const val MATERIAL = "1.1.0"
+    const val COIL = "0.9.5"
 
     object Hilt{
         const val ANDROID = "2.28-alpha"
@@ -35,6 +36,7 @@ object LibraryDependency {
     const val APP_COMPAT = "androidx.appcompat:appcompat:${LibraryVersion.APP_COMPAT}"
     const val CONSTRAINT_LAYOUT = "androidx.constraintlayout:constraintlayout:${LibraryVersion.CONSTRAINT_LAYOUT}"
     const val MATERIAL =  "com.google.android.material:material:${LibraryVersion.MATERIAL}"
+    const val COIL = "io.coil-kt:coil:${LibraryVersion.COIL}"
 
     //Hilt
     object Hilt{
